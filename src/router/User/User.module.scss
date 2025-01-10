@@ -1,0 +1,36 @@
+.wrapper{
+    width: 100%;
+}
+
+.tab_user_block{
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    flex-direction: row;
+}
+
+.tab_user_left{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    height: 70%;
+    background: rgb(141, 138, 138);
+}
+
+
+.item_user_left {
+    font-size: 1.2vw;
+    padding: 0.2vw 0.3vw;
+    border-radius: 5px;
+    cursor: pointer;
+    color: white;
+
+    &:hover{
+        background-color: rgba(60, 103, 230, 0.726);
+    }
+}
+
+.item_user_left.active {
+    background-color: rgba(60, 103, 230, 0.726); // Màu cho tab được chọn
+}
