@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import styles from "./User.module.scss";
+import styles from "./Transaction.module.scss";
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 
@@ -8,12 +8,11 @@ import { useNavigate } from "react-router-dom";
 //Create cx to use CSS classclass
 const cx = classNames.bind(styles);
 
-function User() {
+function Transaction() {
   const items = [
-    { name: "Duyệt Tài Khoản", path: "/path-1" },
-    { name: "Quản lí tài khoản người bán", path: "/path-2" },
-    { name: "Quản lí tài khoản người mua", path: "/path-3" },
-    { name: "Các tài khoản vi phạm", path: "/path-4" }
+    { name: "Theo dõi đơn hàng", path: "/TheoDoiDonHang" },
+    { name: "Giải quyết vấn đề đơn hàng", path: "/GiaiQuyetVanDeDonHang" },
+    { name: "Xủ lí khiếu nại", path: "/XuLiKhieuNai" },
   ];
 
   const [activeItem, setActiveItem] = useState(null);
@@ -26,8 +25,8 @@ function User() {
 
   return (
     <div className={cx("wrapper")}>
-      <div className={cx("tab_user_block")}>
-        <div className={cx("tab_user_left")}>
+      <div className={cx("tab_transaction_block")}>
+        <div className={cx("tab_transaction_left")}>
           {items.map((item, index) => (
             <div
               key={index}
@@ -41,6 +40,8 @@ function User() {
       </div>
     </div>
   );
+
+
 }
 
-export default User;
+export default Transaction;
