@@ -39,6 +39,7 @@ function Dashboard() {
 
   return (
     <>
+    <h1>anhducanhduc</h1>
       {display && <Menu handleClickDisplay={handleClickDisplay} />}
       <div className={styles.wrapper}>
         <img
