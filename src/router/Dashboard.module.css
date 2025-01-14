@@ -1,0 +1,79 @@
+.dashboard_content {
+    font-size: 10vh;
+    padding: 3vh 3vh;
+    background-color: #f0f0f0;
+    border-radius: 10px; 
+    font-weight: bold; 
+}
+
+
+.wrapper {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.img_menu {
+    position: fixed;
+    top: 1vh;
+    left: 0.5vh;
+    height: 5vh;
+    width: 4vw;
+    cursor: pointer;
+}
+
+.dashboard_content {
+    font-size: 7vh;
+    padding: 3vh 3vh;
+}
+
+.g5_content {
+    font-size: 3vh;
+    padding-bottom: 3vh;
+}
+
+.block_menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 3vh;
+    padding-bottom: 3vh;
+    gap: 2vh; /* Khoảng cách đều nhau giữa các hàng và cột */
+    flex-wrap: wrap; /* Để các mục tự xuống dòng */
+    width: 50%;
+}
+
+.items_menu {
+    display: flex;
+    margin-top: 5vh;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 14vw;
+    font-size: medium;
+    flex-direction: column;
+    padding: 10px; /* Khoảng cách giữa ảnh và viền */
+    border-radius: 5px; /* Bo góc */
+    border: 2px solid black; /* Viền đen quanh mỗi mục */
+}
+
+.items_img_menu {
+    width: 80%; /* Giảm kích thước ảnh */
+    height: auto;
+    margin: 2vh 0vh;
+    border-radius: 5px; /* Bo góc cho ảnh */
+}
+
+.item_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.item_content span {
+    margin-top: 8px; /* Khoảng cách giữa ảnh và tên */
+    font-size: 14px; /* Kích thước chữ */
+}
